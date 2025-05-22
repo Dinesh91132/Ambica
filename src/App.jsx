@@ -8,34 +8,22 @@ import Contact from './Pages/Contact'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
-import './App.css'
-import Services from './Pages/Services' 
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
+import './App.css' 
+
 
 import Sports from './Pages/Sports'
 
 
 import Ambulanceservices from './Pages/Ambulanceservices'
-import Medicalcamps from './Pages/Medicalcamps''
-import About from './Pages/About'
+import Medicalcamps from './Pages/Medicalcamps'
+
 import Table from './Pages/Table'
 const App = () => {
     <div>
       
-      <Header />
-      <Hero />
-     <Contact/>
-     <Medicalcamps/>
-     <Ambulanceservices/>
-      <Footer />
-      <About/>
-      <Tble/>
-      <Services/>
-      <Sports />
+  <h1>hi</h1>
     </div>
-  );
+  
 };
 
 
