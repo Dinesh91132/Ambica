@@ -1,12 +1,4 @@
 
-import React from 'react';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Hero from './Components/Hero';
-import './App.css'; // Import your CSS file here
-
-
-
 import React from 'react'
 import { Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home'
@@ -18,9 +10,10 @@ import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import './App.css'
 import Ambulanceservices from './Pages/Ambulanceservices'
-import Medicalcamps from './Pages/Medicalcamps'
+import Medicalcamps from './Pages/Medicalcamps''
+import About from './Pages/About'
+import Table from './Pages/Table'
 const App = () => {
-  return (
     <div>
       
       <Header />
@@ -29,9 +22,12 @@ const App = () => {
      <Medicalcamps/>
      <Ambulanceservices/>
       <Footer />
+      <About/>
+      <Tble/>
     </div>
   );
 };
+
 
 
 export default App
