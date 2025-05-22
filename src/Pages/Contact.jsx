@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -75,5 +76,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;

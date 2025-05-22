@@ -4,6 +4,7 @@ const Ambulanceservices = () => {
   return (
     <div>
       
+
       {/* Ambulance Services */}
       <div className="w-full max-w-3xl bg-white shadow-lg rounded-xl p-6 mb-8 border-l-4 border-blue-600">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">🚑 Ambulance Services</h2>
@@ -18,3 +19,4 @@ const Ambulanceservices = () => {
 }
 
 export default Ambulanceservices
+

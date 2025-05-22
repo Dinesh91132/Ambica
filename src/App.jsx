@@ -9,6 +9,14 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import './App.css'
+import Services from './Pages/Services' 
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+
+import Sports from './Pages/Sports'
+
+
 import Ambulanceservices from './Pages/Ambulanceservices'
 import Medicalcamps from './Pages/Medicalcamps''
 import About from './Pages/About'
@@ -24,10 +32,12 @@ const App = () => {
       <Footer />
       <About/>
       <Tble/>
+      <Services/>
+      <Sports />
     </div>
   );
 };
 
 
 
-export default App
+export default App;
