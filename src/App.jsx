@@ -1,28 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import React from 'react'
+import { Routes, Route} from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Services from './Pages/Services'
+import Contact from './Pages/Contact'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Hero from './Components/Hero'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Ambulanceservices from './Pages/Ambulanceservices'
+import Medicalcamps from './Pages/Medicalcamps''
 import About from './Pages/About'
 import Table from './Pages/Table'
-
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    
+const App = () => {
+    <div>
       
-<About/>
-<Table/>  
+      <Header />
+      <Hero />
+     <Contact/>
+     <Medicalcamps/>
+     <Ambulanceservices/>
+      <Footer />
+      <About/>
+      <Tble/>
+    </div>
+  );
+};
 
 
-
-
-       
-    </>
-  )
-}
 
 export default App
