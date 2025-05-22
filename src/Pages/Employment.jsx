@@ -2,10 +2,9 @@ import React from 'react'
 
 const Employment = () => {
   return (
-    <div>
-      
-    </div>
+
+    <div>Employment</div>
   )
 }
 
-export default Employment;
+export default Employment

@@ -1,6 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import React from 'react'
+import { Routes, Route} from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Services from './Pages/Services'
+import Contact from './Pages/Contact'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Hero from './Components/Hero'
 import './App.css'
 import Services from './Pages/Services' 
 import Home from './Pages/Home'
@@ -9,30 +16,28 @@ import Contact from './Pages/Contact'
 
 import Sports from './Pages/Sports'
 
-import { Routes,Route} from 'react-router-dom'
 
-
-
-
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+import Ambulanceservices from './Pages/Ambulanceservices'
+import Medicalcamps from './Pages/Medicalcamps''
+import About from './Pages/About'
+import Table from './Pages/Table'
+const App = () => {
     <div>
       
+      <Header />
+      <Hero />
+     <Contact/>
+     <Medicalcamps/>
+     <Ambulanceservices/>
+      <Footer />
+      <About/>
+      <Tble/>
       <Services/>
-    <Routes>
-        
-      <Route path="/sports" element={<Sports />} />
-    </Routes> 
-
+      <Sports />
     </div>
-  
-  
-  
-    
   );
-}
+};
+
+
 
 export default App;

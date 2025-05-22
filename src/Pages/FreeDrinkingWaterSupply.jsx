@@ -2,10 +2,10 @@ import React from 'react'
 
 const FreeDrinkingWaterSupply = () => {
   return (
-    <div>
-      
-    </div>
+
+    <div>FreeDrinkingWaterSupply</div>
   )
 }
 
-export default FreeDrinkingWaterSupply;
+export default FreeDrinkingWaterSupply
+

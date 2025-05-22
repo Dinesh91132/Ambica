@@ -2,10 +2,10 @@ import React from 'react'
 
 const Plantation = () => {
   return (
-    <div>
-      
-    </div>
+
+    <div>Plantation</div>
   )
 }
 
-export default Plantation;
+export default Plantation
+

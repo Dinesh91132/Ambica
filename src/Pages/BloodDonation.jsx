@@ -2,10 +2,10 @@ import React from 'react'
 
 const BloodDonation = () => {
   return (
-    <div>
-      
-    </div>
+
+    <div>BloodDonation</div>
   )
 }
 
-export default BloodDonation;
+export default BloodDonation
+

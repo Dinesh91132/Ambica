@@ -2,10 +2,10 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div>
-      
-    </div>
+
+    <div>Education</div>
   )
 }
 
-export default Education;
+export default Education
+
