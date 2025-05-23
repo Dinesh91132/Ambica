@@ -23,6 +23,7 @@ const Footer = () => {
             <li>Sports</li>
             <li>Ambulance Services</li>
             <li>Medical Camps</li>
+            
             <li>Employment</li>
             <li>Education</li>
             <li>Plantation</li>
@@ -34,12 +35,12 @@ const Footer = () => {
           <h2 className="text-xl font-semibold text-blue-900 mb-4">Contact Us</h2>
           <p className="text-blue-900 mb-2">
             <strong>Location:</strong><br />
-            Ambika Foundation,<br />
+            Ambica Foundation,<br />
             Bangalore,<br />
             India
           </p>
           <p className="text-blue-900 mb-2">
-            <strong>Email:</strong> info@ambikafoundation.org
+            <strong>Email:</strong> info@ambicafoundation.org
           </p>
           <p className="text-blue-900">
             <strong>Phone:</strong> +91 9990000055
