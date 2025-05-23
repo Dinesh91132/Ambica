@@ -1,12 +1,14 @@
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const services = [
-  { label: "Blood Donation", path: "/blood-donation" },
+  { label: "BloodDonation", path: "/bloodDonation" },
   { label: "Sports", path: "/sports" },
-  { label: "Plantation", path: "/plantation" },
-  { label: "Ambulance Services", path: "/ambulance" },
-  { label: "Medical Camps", path: "/medical-camps" },
+  { label: "Plantation", path: "/Plantation" },
+  { label: "Ambulanceservices", path: "/Ambulanceservices" },
+  { label: "Medicalcamps", path: "/Medicalcamps" },
   { label: "Employment", path: "/employment" },
   { label: "Free Drinking Water Supply", path: "/water-supply" },
   { label: "Education", path: "/education" },
@@ -16,16 +18,19 @@ const services = [
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const toggleDropdown = () => setDropdownOpen(prev => !prev);
+  const closeDropdown = () => setDropdownOpen(false);
+
   return (
     <header className="bg-white shadow py-6 px-8 flex justify-between items-center relative z-50">
       {/* Logo */}
       <div className="flex items-center space-x-4">
         <img
           src="/images/logo.png"
-          alt="Ambika Foundation"
+          alt="Ambica Foundation"
           className="h-20 w-32 object-contain"
         />
-        <span className="text-3xl font-extrabold text-blue-900">AMBIKA FOUNDATION</span>
+        <span className="text-3xl font-extrabold text-blue-900">AMBICA FOUNDATION</span>
       </div>
 
       {/* Navigation */}
@@ -34,17 +39,11 @@ const Header = () => {
           <li><Link to="/" className="hover:text-red-500 text-blue-900">Home</Link></li>
           <li><Link to="/about" className="hover:text-red-500 text-blue-900">About</Link></li>
           
-          {/* Services with dropdown */}
-          <li
-            className="relative"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-          >
+          {/* Services (Click to open) */}
+          <li className="relative">
             <button
+              onClick={toggleDropdown}
               className="flex items-center gap-1 hover:text-red-500 text-blue-900 font-semibold focus:outline-none"
-              aria-haspopup="true"
-              aria-expanded={dropdownOpen ? "true" : "false"}
-              onClick={() => setDropdownOpen(!dropdownOpen)}
               type="button"
             >
               Services
@@ -55,9 +54,8 @@ const Header = () => {
                 strokeWidth="2"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
 
@@ -69,7 +67,7 @@ const Header = () => {
                     <Link
                       to={service.path}
                       className="block px-4 py-2 text-gray-900 hover:bg-blue-100 hover:text-blue-900"
-                      onClick={() => setDropdownOpen(false)}
+                      onClick={closeDropdown}
                     >
                       {service.label}
                     </Link>
@@ -87,3 +85,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
