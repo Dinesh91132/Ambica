@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-300 flex flex-col items-center justify-center px-6 py-12">
-      <h1 className="text-4xl font-extrabold text-[#122f6b] mb-8">Contact Us</h1>
+      <h1 className="text-5xl font-extrabold text-[#122f6b] mb-8">Contact Us</h1>
 
       <div className="grid md:grid-cols-2 gap-12 w-full max-w-5xl bg-white p-10 rounded-3xl shadow-2xl animate-slideFadeIn">
         {/* Contact Information Section */}
