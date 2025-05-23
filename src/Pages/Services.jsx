@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -24,12 +23,20 @@ const Services = () => {
     }
   };
 
+  const handleClick = (path) => {
+    navigate(path);
+  };
+
   return (
-    <div className="p-6 max-w-2xl mx-auto">
+    <div className="p-6 max-w-7xl bg-gray-300 mx-auto min-h-screen">
       <h1 className="text-4xl font-bold mb-6 text-center text-blue-900">Our Services</h1>
 
-      <div className="mb-4">
-        <label htmlFor="service-select" className="block text-lg font-semibold mb-2 text-blue-900">
+      {/* Dropdown selector */}
+      <div className="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto mb-8 animate-slideFadeIn">
+        <label
+          htmlFor="service-select"
+          className="block text-lg font-semibold mb-2 text-blue-900"
+        >
           Choose a service:
         </label>
         <select
@@ -46,9 +53,40 @@ const Services = () => {
           ))}
         </select>
       </div>
+
+      {/* Buttons list */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        {services.map((service) => (
+          <button
+            key={service.label}
+            onClick={() => handleClick(service.path)}
+            className="bg-white text-blue-900 font-semibold py-3 px-4 rounded shadow hover:bg-blue-100 transition duration-200 animate-slideFadeIn"
+          >
+            {service.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Animation CSS */}
+      <style>
+        {`
+          @keyframes slideFadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-slideFadeIn {
+            animation: slideFadeIn 0.6s ease-out forwards;
+          }
+        `}
+      </style>
     </div>
   );
 };
 
 export default Services;
-

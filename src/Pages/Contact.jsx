@@ -1,14 +1,12 @@
-
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#d1e7ff] to-[#f2e6ff] flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-gray-300 flex flex-col items-center justify-center px-6 py-12">
       <h1 className="text-4xl font-extrabold text-[#122f6b] mb-8">Contact Us</h1>
 
-      <div className="grid md:grid-cols-2 gap-12 w-full max-w-5xl bg-white p-10 rounded-3xl shadow-2xl">
-
+      <div className="grid md:grid-cols-2 gap-12 w-full max-w-5xl bg-white p-10 rounded-3xl shadow-2xl animate-slideFadeIn">
         {/* Contact Information Section */}
         <div className="space-y-8">
           <div className="flex items-start gap-4">
@@ -73,9 +71,27 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      {/* Animation CSS */}
+      <style>
+        {`
+          @keyframes slideFadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-slideFadeIn {
+            animation: slideFadeIn 0.6s ease-out forwards;
+          }
+        `}
+      </style>
     </div>
   );
 };
-
 
 export default Contact;
