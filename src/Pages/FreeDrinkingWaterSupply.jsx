@@ -1,19 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const FreeDrinkingWaterSupply = () => {
   return (
-    <div className="min-h-screen bg-gray-300">
-    <div className="p-6 max-w-5xl mx-auto min-h-screen bg-gray-300 text-gray-900">
-      {/* Red heading
-      <h1 className="text-4xl font-bold mb-6 text-center text-red-600 animate-slideDown">
-       Free Drinking Water Supply
-      </h1> */}
+    <div className="min-h-screen bg-gray-300 flex items-center justify-center px-4 py-10">
+      <motion.div
+        className="p-6 max-w-5xl w-full bg-gray-100 text-gray-900 rounded-lg shadow-md"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+        <motion.h1
+          className="text-4xl font-bold mb-6 text-center text-red-600"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Free Drinking Water Supply
+        </motion.h1>
 
-      {/* Gray background box */}
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md animate-fadeInBox">
-        <h1 className="text-4xl font-bold mb-6 text-center text-red-600 animate-slideDown">
-       Free Drinking Water Supply
-       </h1>
         <p className="mb-4 text-lg text-gray-900">
           Ensuring access to safe and clean drinking water is one of our top priorities. Our team has actively worked to
           mitigate water scarcity and provide relief during the harsh summer seasons.
@@ -42,31 +47,7 @@ const FreeDrinkingWaterSupply = () => {
           We believe that access to drinking water is a basic human right, and we're committed to expanding this initiative
           further with community support.
         </p>
-      </div>
-
-      {/* Animation styles */}
-      <style>
-        {`
-          @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-
-          @keyframes fadeInBox {
-            from { opacity: 0; transform: scale(0.98); }
-            to { opacity: 1; transform: scale(1); }
-          }
-
-          .animate-slideDown {
-            animation: slideDown 0.5s ease-out forwards;
-          }
-
-          .animate-fadeInBox {
-            animation: fadeInBox 0.6s ease-out forwards;
-          }
-        `}
-      </style>
-    </div>
+      </motion.div>
     </div>
   );
 };

@@ -11,13 +11,14 @@ const Footer = () => {
           <img
             src="/images/logo.png" // ✅ Correct path if image is in public/images
             alt="Ambika Foundation"
-            className="w-48 h-auto rounded shadow-md"
+            className="w-48 h-auto rounded "
+            
           />
         </div>
 
         {/* Services List */}
         <div>
-          <h2 className="text-xl font-semibold text-blue-900 mb-4">Our Services</h2>
+          <h2 className="text-xl font-semibold text-red-700 mb-4">Our Services</h2>
           <ul className="space-y-2 list-disc text-blue-900 list-inside">
             <li>Blood Donation</li>
             <li>Sports</li>
@@ -32,7 +33,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h2 className="text-xl font-semibold text-blue-900 mb-4">Contact Us</h2>
+          <h2 className="text-xl font-semibold text-red-700 mb-4">Contact Us</h2>
           <p className="text-blue-900 mb-2">
             <strong>Location:</strong><br />
             Ambica Foundation,<br />
@@ -49,7 +50,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h2 className="text-xl font-semibold text-blue-900 mb-4">Quick Links</h2>
+          <h2 className="text-xl font-semibold text-red-700 mb-4">Quick Links</h2>
           <ul className="space-y-2 text-blue-900">
             <li><a href="#" className="hover:underline">Home</a></li>
             <li><a href="#" className="hover:underline">About</a></li>
