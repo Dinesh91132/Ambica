@@ -1,7 +1,5 @@
-
-
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const services = [
   { label: "BloodDonation", path: "/bloodDonation" },
@@ -10,16 +8,23 @@ const services = [
   { label: "Ambulanceservices", path: "/Ambulanceservices" },
   { label: "Medicalcamps", path: "/Medicalcamps" },
   { label: "Employment", path: "/employment" },
-  { label: "Free Drinking Water Supply", path: "/water-supply" },
+  { label: "Free Drinking Water Supply", path: "/FreeDrinkingWaterSupply" },
   { label: "Education", path: "/education" },
-  { label: "Other Services", path: "/other-services" },
+  { label: "OtherServices", path: "/OtherServices" },
+  
 ];
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const toggleDropdown = () => setDropdownOpen(prev => !prev);
   const closeDropdown = () => setDropdownOpen(false);
+
+  // ❗ Close dropdown when route changes
+  useEffect(() => {
+    closeDropdown();
+  }, [location.pathname]);
 
   return (
     <header className="bg-white shadow py-6 px-8 flex justify-between items-center relative z-50">
@@ -28,7 +33,8 @@ const Header = () => {
         <img
           src="/images/logo.png"
           alt="Ambica Foundation"
-          className="h-20 w-32 object-contain"
+          
+          className="h-25 w-32 object-contain"
         />
         <span className="text-3xl font-extrabold text-blue-900">AMBICA FOUNDATION</span>
       </div>
@@ -39,7 +45,6 @@ const Header = () => {
           <li><Link to="/" className="hover:text-red-500 text-blue-900">Home</Link></li>
           <li><Link to="/about" className="hover:text-red-500 text-blue-900">About</Link></li>
           
-          {/* Services (Click to open) */}
           <li className="relative">
             <button
               onClick={toggleDropdown}
@@ -67,7 +72,6 @@ const Header = () => {
                     <Link
                       to={service.path}
                       className="block px-4 py-2 text-gray-900 hover:bg-blue-100 hover:text-blue-900"
-                      onClick={closeDropdown}
                     >
                       {service.label}
                     </Link>
@@ -85,5 +89,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
