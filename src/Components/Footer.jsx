@@ -1,67 +1,39 @@
-
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="bg-white py-12 px-4 text-center">
-      {/* Flex container for image, services, contact, and quick links */}
-      <div className="flex flex-col md:flex-row justify-center gap-12 max-w-6xl mx-auto text-left items-start">
-        {/* Image */}
-        <div className="flex-shrink-0">
-          <img
-            src="/images/logo.png" // ✅ Correct path if image is in public/images
-            alt="Ambika Foundation"
-            className="w-48 h-auto rounded "
-            
-          />
+    <footer id="contact" className="bg-gradient-to-r from-blue-600/90 to-purple-600/90 text-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="animate-fade-in-up">
+            <h3 className="text-2xl font-bold mb-4">About Ambica Foundation</h3>
+            <p className="text-blue-100 leading-relaxed">
+              Established on 2nd October 2009 (Gandhi Jayanthi), serving the people of Hindupur Constituency with dedication and compassion.
+            </p>
+          </div>
+          <div className="animate-fade-in-up" style={{animationDelay: '200ms'}}>
+            <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+            <p className="text-blue-100 leading-relaxed">
+              To provide comprehensive support through healthcare, education, employment opportunities, and community development initiatives.
+            </p>
+          </div>
+          <div className="animate-fade-in-up" style={{animationDelay: '400ms'}}>
+            <h3 className="text-2xl font-bold mb-4">Contact Info</h3>
+            <p className="text-blue-100 leading-relaxed">
+              Serving Hindupur Constituency<br />
+              Karnataka, India<br />
+              Established: 2nd October 2009
+            </p>
+          </div>
         </div>
-
-        {/* Services List */}
-        <div>
-          <h2 className="text-xl font-semibold text-red-700 mb-4">Our Services</h2>
-          <ul className="space-y-2 list-disc text-blue-900 list-inside">
-            <li>Blood Donation</li>
-            <li>Sports</li>
-            <li>Ambulance Services</li>
-            <li>Medical Camps</li>
-            
-            <li>Employment</li>
-            <li>Education</li>
-            <li>Plantation</li>
-          </ul>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h2 className="text-xl font-semibold text-red-700 mb-4">Contact Us</h2>
-          <p className="text-blue-900 mb-2">
-            <strong>Location:</strong><br />
-            Ambica Foundation,<br />
-            Bangalore,<br />
-            India
+        <div className="border-t border-white/20 pt-8 text-center">
+          <p className="text-blue-100">
+            © 2024 Ambica Foundation. All rights reserved. Serving communities with love and dedication.
           </p>
-          <p className="text-blue-900 mb-2">
-            <strong>Email:</strong> info@ambicafoundation.org
-          </p>
-          <p className="text-blue-900">
-            <strong>Phone:</strong> +91 9990000055
-          </p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h2 className="text-xl font-semibold text-red-700 mb-4">Quick Links</h2>
-          <ul className="space-y-2 text-blue-900">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About</a></li>
-            <li><a href="#" className="hover:underline">Services</a></li>
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
-          </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
-export default Footer;
-
+export default Footer
