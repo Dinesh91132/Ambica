@@ -11,10 +11,10 @@ const Hero = ({ scrollToSection }) => {
       <div className="absolute bottom-20 right-10 w-14 h-14 bg-yellow-200/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
       
       <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-6xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-6 animate-fade-in-up py-5">
+        <h2 className="text-4xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-6 animate-fade-in-up py-5">
           Serving Communities
         </h2>
-        <p className="text-6xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 animate-fade-in-up" style={{animationDelay: '200ms'}}>
+        <p className="text-4xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 animate-fade-in-up" style={{animationDelay: '200ms'}}>
           Since 2009
         </p>
         <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '400ms'}}>

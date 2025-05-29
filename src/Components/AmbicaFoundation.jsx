@@ -121,13 +121,13 @@
 
 // export default AmbicaFoundation;
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
+// import Header from './Header';
 import Hero from './Hero';
 import StatsSection from './StatsSection';
 import ServicesSection from './ServicesSection';
 import ActivitiesSection from './ActivitiesSection';
 import AboutSection from './AboutSection';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const AmbicaFoundation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -223,20 +223,20 @@ const AmbicaFoundation = () => {
         }
       `}</style>
 
-      <Header
+      {/* <Header
         isScrolled={isScrolled}
         activeSection={activeSection}
         isMobileMenuOpen={isMobileMenuOpen}
         scrollToSection={scrollToSection}
         toggleMobileMenu={toggleMobileMenu}
-      />
+      /> */}
 
       <Hero scrollToSection={scrollToSection} />
       <StatsSection />
       <ServicesSection />
       <ActivitiesSection />
       <AboutSection />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
