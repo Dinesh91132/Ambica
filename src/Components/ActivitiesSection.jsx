@@ -38,9 +38,12 @@ const ActivitiesSection = () => {
   return (
     <section id="activities" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text animate-fade-in-up">
+        <h2 className="text-4xl md:text-4xl font-bold text-center mb-16 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 animate-fade-in-up py-1 text-transparent">
           Our Activities
         </h2>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center animate-fade-in-up" style={{animationDelay: '200ms'}}>
+            Discover our ongoing and upcoming community initiatives that make a real difference.
+          </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity, index) => (
             <ActivityCard 
