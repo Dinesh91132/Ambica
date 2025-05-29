@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 const Hero = ({ scrollToSection }) => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-8">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 via-transparent to-purple-100/30"></div>
       
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200/30 rounded-full animate-float"></div>
-      <div className="absolute top-40 right-20 w-16 h-16 bg-purple-200/30 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="absolute bottom-40 left-20 w-12 h-12 bg-pink-200/30 rounded-full animate-float" style={{animationDelay: '4s'}}></div>
-      <div className="absolute bottom-20 right-10 w-14 h-14 bg-yellow-200/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200/50 rounded-full animate-float"></div>
+      <div className="absolute top-40 right-20 w-16 h-16 bg-purple-200/50 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute bottom-40 left-20 w-12 h-12 bg-pink-200/50 rounded-full animate-float" style={{animationDelay: '4s'}}></div>
+      <div className="absolute bottom-20 right-10 w-14 h-14 bg-yellow-200/50 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
       
       <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-6 animate-fade-in-up py-5">
