@@ -16,6 +16,13 @@ import Rural from './Pages/Rural.jsx';
 import Womenpage from './Pages/Womenpage.jsx';
 import SportsPage from './Pages/SportsPage.jsx';
 import DisasterPage from './Pages/DisasterPage.jsx';
+import BloodDonation from './Pages/BloodDonation.jsx';
+import CricketPage from './Pages/CricketPage.jsx';
+import Medicine from './Pages/Medicine.jsx';
+import Plantation from './Pages/Planation.jsx';
+import WaterSupply from './Pages/WaterSupply.jsx';
+import Hospital from './Pages/Hospital.jsx';
+import OtherServices from './Pages/OtherServices.jsx';
 
 function App() {
   return (
@@ -36,6 +43,14 @@ function App() {
         <Route path="/Womenpage" element={<Womenpage />} />
         <Route path="/SportsPage" element={<SportsPage />} />
         <Route path="/DisasterPage" element={<DisasterPage />} />
+        <Route path="/BloodDonation" element={<BloodDonation />} />
+        <Route path="/CricketPage" element={<CricketPage />} />
+        <Route path="/Medicine" element={<Medicine />} />
+        <Route path="/Planation" element={<Plantation />} />
+        <Route path="/WaterSupply" element={<WaterSupply />} />
+        <Route path="/Hospital" element={<Hospital />} />
+        <Route path="/OtherServices" element={<OtherServices />} />
+  
       </Routes>
       <Footer />
     </div>

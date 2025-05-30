@@ -21,6 +21,15 @@ const DisasterPage = () => {
           Our Disaster Relief initiatives are driven by compassion, coordination, and community strength — ensuring that no one is left behind in times of crisis.
         </p>
 
+        {/* Image 1 */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="/Images/Disaster1.png"
+            alt="Disaster Relief Team"
+            className="w-full max-w-xl rounded-lg shadow-md"
+          />
+        </div>
+
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">🌪 What We Do</h2>
 
         <div className="text-left space-y-5 text-gray-800">
@@ -59,6 +68,15 @@ const DisasterPage = () => {
               <li>Promoting resilient infrastructure and sustainable practices to reduce future risk.</li>
             </ul>
           </div>
+        </div>
+
+        {/* Image 2 */}
+        <div className="flex justify-center mt-10">
+          <img
+            src="/Images/Disaster2.png"
+            alt="Rehabilitation Work"
+            className="w-100 max-w-xl rounded-lg shadow-md"
+          />
         </div>
       </motion.div>
     </div>

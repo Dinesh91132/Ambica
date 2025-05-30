@@ -10,7 +10,16 @@ const SportsPage = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-6 text-center"
       >
-        <h1 className="text-3xl font-bold text-blue-700 mb-4">🏏 Sports Initiatives</h1>
+        <h1 className="text-3xl font-bold text-red-700 mb-4">🏏 Sports Initiatives</h1>
+
+        {/* Image 1 */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/Images/SportsPage1.png"
+            alt="Youth playing cricket"
+            className="w-100 max-w-xl rounded-lg shadow-md"
+          />
+        </div>
 
         <div className="text-left text-gray-800 space-y-6">
           <div>
@@ -40,6 +49,15 @@ const SportsPage = () => {
               Recently organized the Simhapuri Premier League, an interstate cricket tournament held in Hindupur, bringing together teams from various regions to foster competitive spirit and provide exposure to rural players.
             </p>
           </div>
+        </div>
+
+        {/* Image 2 */}
+        <div className="flex justify-center mt-10">
+          <img
+            src="/Images/SportsPage2.png"
+            alt="Simhapuri Premier League"
+            className="w-100 max-w-xl rounded-lg shadow-md"
+          />
         </div>
       </motion.div>
     </div>

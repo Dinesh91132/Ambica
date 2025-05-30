@@ -1,19 +1,33 @@
-import React from 'react'
-import ServiceCard from './ServiceCard'; // ✅ Fixes the ReferenceError
+import React from 'react';
+import { motion } from 'framer-motion';
+import ServiceCard from './ServiceCard';
 
 const ServicesSection = () => {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.3,
+        ease: 'easeOut',
+      },
+    }),
+  };
+
   const services = [
     {
       icon: "🏥",
       title: "Medical Camp",
-      description: "Free ambulance service from Hindapur to Bangalore, Anantapur and Puttaparthi. Blood donation camps and health check-ups for students.",
+      description: "Free ambulance service from Hindapur to Bangalore, Anantapur and Puttaparthi. and health check-ups for students.",
       link: "/MedicalAid",
     },
     {
       icon: "🎓",
       title: "Education",
-      description: "Scholarships for meritorious students pursuing Engineering and M.B.A. Donations of books, stationery and uniforms to support education."
-      , link: "/Education",
+      description: "Scholarships for meritorious students pursuing Engineering and M.B.A. Donations of books, stationery and uniforms to support education.",
+      link: "/Education",
     },
     {
       icon: "💼",
@@ -24,54 +38,82 @@ const ServicesSection = () => {
     {
       icon: "🌾",
       title: "Rural Development",
-      description: "Donated street lights to villages for better safety and connectivity. Supporting rural infrastructure development initiatives."
-      , link: "/Rural"
+      description: "Donated street lights to villages for better safety and connectivity. Supporting rural infrastructure development initiatives.",
+      link: "/Rural"
     },
     {
       icon: "🧵",
       title: "Women Empowerment",
-      description: "Donated sewing machines to poor women to help them establish their own livelihood and achieve financial independence."
-      , link: "/Womenpage"
+      description: "Donated sewing machines to poor women to help them establish their own livelihood and achieve financial independence.",
+      link: "/Womenpage"
     },
     {
       icon: "⛑️",
       title: "Disaster Relief",
-      description: "Rapid response to local disasters with food, clothing, and temporary shelter support for affected families."
-      , link: "/DisasterPage"
+      description: "Rapid response to local disasters with food, clothing, and temporary shelter support for affected families.",
+      link: "/DisasterPage"
     },
     {
       icon: "🚑",
       title: "Ambulance Services",
-      description: "24/7 free ambulance service available from Hindapur to Bangalore, Anantapur, and Puttaparthi for emergency medical assistance."
-      , link: "/Ambulance"
+      description: "24/7 free ambulance service available from Hindapur to Bangalore, Anantapur, and Puttaparthi for emergency medical assistance.",
+      link: "/Ambulance"
     },
     {
       icon: "🏆",
       title: "Sports",
-      description: "Organized district-wide volleyball tournaments and mandal-wide cricket tournaments in rural areas to promote sports."
-      , link: "/SportsPage"
-    }
+      description: "Organized district-wide volleyball tournaments and mandal-wide cricket tournaments in rural areas to promote sports.",
+      link: "/SportsPage"
+    },
+    {
+      icon: "🎁",
+      title: "Other Services",
+      description: "Distribution of blankets, cultural activities, women empowerment programs, borewell installations, COVID relief efforts, and more.",
+      link: "/OtherServices"
+    },
   ];
 
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-4xl font-bold text-center mb-0 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text animate-fade-in-up py-1">
+        <motion.h2
+          className="text-4xl md:text-4xl font-bold text-center mb-0 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text py-1"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          custom={0}
+        >
           Our Services
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center animate-fade-in-up" style={{animationDelay: '200ms'}}>
+        </motion.h2>
+
+        <motion.p
+          className="text-xl text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          custom={1}
+        >
           Comprehensive support services designed to uplift communities and create lasting positive impact.
-        </p>
+        </motion.p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard 
+            <motion.div
               key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              delay={index * 200}
-              link={service.link} // Pass link if needed in ServiceCard
-            />
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={index + 2}
+            >
+              <ServiceCard
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                delay={index * 200}
+                link={service.link}
+              />
+            </motion.div>
           ))}
         </div>
       </div>
