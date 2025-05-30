@@ -26,7 +26,7 @@ const Hero = ({ scrollToSection }) => {
           Established on Gandhi Jayanthi, we provide comprehensive support through healthcare, education, employment, and community development initiatives.
           <br />
           
-          <p className="text-xl md:text-1xl text-gray-800 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '500ms'}}>The Ambika Foundation has been actively engaged in environmental conservation through its plantation programs. In 2024, under the leadership of Ambika Moharana, the foundation launched an ambitious initiative aiming to plant over 5,000 trees to promote a greener future . This effort reflects their commitment to enhancing biodiversity and combating climate change.
+          <p className="text-xl md:text-1xl text-gray-800 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '500ms'}}>The Ambika Foundation has been actively engaged in environmental conservation through its plantation programs. In 2024, under the leadership of Ambika Moharana, the foundation launched an ambitious initiative aiming to plant over 5,000 trees to promote a greener future . 
 
 
 One of the notable events was the Mega Tree Plantation Program organized by the Ambika Foundation Charitable Trust. This large-scale event focused on community involvement and environmental awareness, emphasizing the importance of tree planting in ecological restoration. A video documenting this program provides insights into the foundation's dedication to environmental causes.
