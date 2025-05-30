@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-  { src: '/Images/Cricket1.png', alt: 'Young athlete receiving cricket kit' },
-  { src: '/Images/Cricket2.png', alt: 'Group of kids playing cricket' },
+  { src: '/images/Cricket1.png', alt: 'Young athlete receiving cricket kit' },
+  { src: '/images/Cricket2.png', alt: 'Group of kids playing cricket' },
 ];
 
 const CricketKitDistribution = () => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-  { src: '/Images/Medicine1.png', alt: 'Volunteers distributing medicines' },
-  { src: '/Images/Medicine2.png', alt: 'Senior citizens receiving free medicines' },
+  { src: '/images/Medicine1.png', alt: 'Volunteers distributing medicines' },
+  { src: '/images/Medicine2.png', alt: 'Senior citizens receiving free medicines' },
 ];
 
 const MedicineDistribution = () => {

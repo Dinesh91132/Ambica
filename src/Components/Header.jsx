@@ -24,7 +24,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-2 animate-fade-in-up cursor-pointer">
             <div >
               <span className="text-white font-bold text-xl">
-                <img src="/Images/logo.png" alt="Logo" 
+                <img src="/images/logo.png" alt="Logo" 
 
             className="w-13 h-12 rounded shadow-lg transform hover:scale-110 transition-transform duration-300"
            />

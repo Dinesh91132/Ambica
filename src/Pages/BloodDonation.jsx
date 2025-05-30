@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const BloodDonation = () => {
   const images = [
-    { src: '/Images/BloodDonation1.png', alt: 'Blood Donation Camp 1' },
-    { src: '/Images/BloodDonation2.png', alt: 'Blood Donation Camp 2' },
+    { src: '/images/BloodDonation1.png', alt: 'Blood Donation Camp 1' },
+    { src: '/images/BloodDonation2.png', alt: 'Blood Donation Camp 2' },
   ];
 
   return (

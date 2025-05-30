@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-  { src: '/Images/Plantation1.png', alt: 'Volunteers planting trees' },
-  { src: '/Images/Plantation2.png', alt: 'Young trees in a plantation drive' },
+  { src: '/images/Plantation1.png', alt: 'Volunteers planting trees' },
+  { src: '/images/Plantation2.png', alt: 'Young trees in a plantation drive' },
 ];
 
 const Plantation = () => {

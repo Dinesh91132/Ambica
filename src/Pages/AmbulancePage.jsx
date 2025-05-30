@@ -15,7 +15,7 @@ const AmbulancePage = () => {
         {/* Image 1 */}
         <div className="flex justify-center mb-6">
           <img
-            src="/Images/Ambulance1.png"
+            src="/images/Ambulance1.png"
             alt="Ambulance on duty"
             className="w-full max-w-xl rounded-lg shadow-md"
           />
@@ -54,7 +54,7 @@ const AmbulancePage = () => {
         {/* Image 2 */}
         <div className="flex justify-center mt-10">
           <img
-            src="/Images/Ambulance2.png"
+            src="/images/Ambulance2.png"
             alt="Patient transport"
             className="w-full max-w-xl rounded-lg shadow-md"
           />

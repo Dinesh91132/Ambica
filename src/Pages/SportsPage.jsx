@@ -15,7 +15,7 @@ const SportsPage = () => {
         {/* Image 1 */}
         <div className="flex justify-center mb-6">
           <img
-            src="/Images/SportsPage1.png"
+            src="/images/SportsPage1.png"
             alt="Youth playing cricket"
             className="w-100 max-w-xl rounded-lg shadow-md"
           />
@@ -54,7 +54,7 @@ const SportsPage = () => {
         {/* Image 2 */}
         <div className="flex justify-center mt-10">
           <img
-            src="/Images/SportsPage2.png"
+            src="/images/SportsPage2.png"
             alt="Simhapuri Premier League"
             className="w-100 max-w-xl rounded-lg shadow-md"
           />
