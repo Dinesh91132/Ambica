@@ -78,7 +78,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
           >
             <img
-              src="./Images/About.png"
+              src="./images/About.png"
               alt="Ambika Foundation"
               loading="lazy"
               className="rounded-2xl shadow-lg object-cover w-full h-full"

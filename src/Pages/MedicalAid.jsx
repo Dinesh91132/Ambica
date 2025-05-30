@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const MedicalAid = () => {
   const images = [
-    { src: '/Images/MedicalAid1.png', alt: 'Medical Camp 1' },
-    { src: '/Images/MedicalAid2.png', alt: 'Medical Camp 2' },
+    { src: '/images/MedicalAid1.png', alt: 'Medical Camp 1' },
+    { src: '/images/MedicalAid2.png', alt: 'Medical Camp 2' },
   ];
 
   return (

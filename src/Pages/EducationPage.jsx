@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const EducationPage = () => {
   const images = {
-    scholarships: '/Images/Scholarships.png',
-    studyMaterials: '/Images/Dictionaries.png',
-    textbooks: '/Images/Books.png',
-    awards: '/Images/Prathiba.png',
+    scholarships: '/images/Scholarships.png',
+    studyMaterials: '/images/Dictionaries.png',
+    textbooks: '/images/Books.png',
+    awards: '/images/Prathiba.png',
   };
 
   return (

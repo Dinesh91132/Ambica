@@ -23,7 +23,7 @@ const Womenpage = () => {
         {/* Image 1 */}
         <div className="flex justify-center mb-6">
           <img
-            src="/Images/Women1.png"
+            src="/images/Women1.png"
             alt="Women Skill Training"
             className="w-full max-w-xl rounded-lg shadow-md"
           />
@@ -84,7 +84,7 @@ const Womenpage = () => {
         {/* Image 2 */}
         <div className="flex justify-center mt-8">
           <img
-            src="/Images/Women2.png"
+            src="/images/Women2.png"
             alt="Women Empowerment Campaign"
             className="w-full max-w-xl rounded-lg shadow-md"
           />

@@ -23,7 +23,7 @@ const Rural = () => {
         {/* Image 1 */}
         <div className="flex justify-center mb-6">
           <img
-            src="/Images/Rural1.png"
+            src="/images/Rural1.png"
             alt="Rural Development Activities"
             className="w-100 max-w-xl rounded-lg shadow-md"
           />
@@ -42,7 +42,7 @@ const Rural = () => {
         {/* Image 2 */}
         <div className="flex justify-center mt-8">
           <img
-            src="/Images/Rural2.png"
+            src="/images/Rural2.png"
             alt="Village Empowerment Program"
             className="w-100 max-w-xl rounded-lg shadow-md"
           />
