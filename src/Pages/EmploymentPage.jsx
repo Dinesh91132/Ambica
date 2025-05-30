@@ -22,7 +22,7 @@ const EmploymentPage = () => {
 
           <div className="flex justify-center">
             <img
-              src="/Images/Jobs1.png"
+              src="/images/Jobs1.png"
               alt="Job Mela overview"
               className="w-100 max-w-xl rounded-lg shadow-md"
             />
@@ -36,7 +36,7 @@ const EmploymentPage = () => {
 
           <div className="flex justify-center">
             <img
-              src="/Images/Jobs2.png"
+              src="/images/Jobs2.png"
               alt="Corporate Collaborations"
               className="w-100 max-w-xl rounded-lg shadow-md"
             />
@@ -55,7 +55,7 @@ const EmploymentPage = () => {
         {/* Job Fair Image */}
         <motion.div whileHover={{ scale: 1.02 }} className="mb-6 overflow-hidden rounded-lg shadow-md flex justify-center">
           <img
-            src="/Images/Jobs3.png"
+            src="/images/Jobs3.png"
             alt="Job Fair"
             className="w-100 max-w-3xl h-auto rounded-lg"
           />

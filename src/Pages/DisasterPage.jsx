@@ -24,7 +24,7 @@ const DisasterPage = () => {
         {/* Image 1 */}
         <div className="flex justify-center mb-8">
           <img
-            src="/Images/Disaster1.png"
+            src="/images/Disaster1.png"
             alt="Disaster Relief Team"
             className="w-full max-w-xl rounded-lg shadow-md"
           />
@@ -73,7 +73,7 @@ const DisasterPage = () => {
         {/* Image 2 */}
         <div className="flex justify-center mt-10">
           <img
-            src="/Images/Disaster2.png"
+            src="/images/Disaster2.png"
             alt="Rehabilitation Work"
             className="w-100 max-w-xl rounded-lg shadow-md"
           />

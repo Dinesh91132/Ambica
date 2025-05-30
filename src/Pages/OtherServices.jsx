@@ -48,12 +48,12 @@ const OtherServices = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
-            { src: "./Images/OtherServices1.png", alt: "Blanket Distribution" },
-            { src: "./Images/OtherServices2.png", alt: "Cultural Engagement" },
-            { src: "./Images/OtherServices3.png", alt: "Women Empowerment" },
-            { src: "./Images/OtherServices4.png", alt: "Rural Development" },
-            { src: "./Images/OtherServices5.png", alt: "Water Access" },
-            { src: "./Images/OtherServices6.png", alt: "COVID Relief" },
+            { src: "./images/OtherServices1.png", alt: "Blanket Distribution" },
+            { src: "./images/OtherServices2.png", alt: "Cultural Engagement" },
+            { src: "./images/OtherServices3.png", alt: "Women Empowerment" },
+            { src: "./images/OtherServices4.png", alt: "Rural Development" },
+            { src: "./images/OtherServices5.png", alt: "Water Access" },
+            { src: "./images/OtherServices6.png", alt: "COVID Relief" },
           ].map((img, index) => (
             <motion.img
               key={index}
