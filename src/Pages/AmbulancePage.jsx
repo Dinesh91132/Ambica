@@ -10,7 +10,16 @@ const AmbulancePage = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-6 text-center"
       >
-        <h1 className="text-3xl font-bold text-red-600 mb-6">🚑 Ambulance Services</h1>
+        <h1 className="text-3xl font-bold text-red-700 mb-6">🚑 Ambulance Services</h1>
+
+        {/* Image 1 */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/Images/Ambulance1.png"
+            alt="Ambulance on duty"
+            className="w-full max-w-xl rounded-lg shadow-md"
+          />
+        </div>
 
         <div className="text-left text-gray-800 space-y-6">
           <div>
@@ -40,6 +49,15 @@ const AmbulancePage = () => {
               These services significantly supported rural and underprivileged communities by providing <strong>timely and affordable emergency medical transportation</strong>, often saving lives in critical situations.
             </p>
           </div>
+        </div>
+
+        {/* Image 2 */}
+        <div className="flex justify-center mt-10">
+          <img
+            src="/Images/Ambulance2.png"
+            alt="Patient transport"
+            className="w-full max-w-xl rounded-lg shadow-md"
+          />
         </div>
       </motion.div>
     </div>

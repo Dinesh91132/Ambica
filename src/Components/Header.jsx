@@ -32,7 +32,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 animate-fade-in-up py-1">AMBICA FOUNDATION</h1>
-              <p className="text-sm text-gray-600">Serving Since 2009</p>
+              <p className="text-sm text-gray-700">Serving Since 2009</p>
             </div>
           </Link>
 

@@ -20,6 +20,15 @@ const Womenpage = () => {
           We believe that empowering women is not just a goal — it’s the foundation for sustainable development.
         </p>
 
+        {/* Image 1 */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/Images/Women1.png"
+            alt="Women Skill Training"
+            className="w-full max-w-xl rounded-lg shadow-md"
+          />
+        </div>
+
         <h3 className="text-2xl font-semibold text-blue-600 mb-4">🌟 Our Vision</h3>
         <p className="text-gray-800 text-left mb-6">
           To build a society where women are respected, educated, self-reliant, and actively contribute to the community’s growth and prosperity.
@@ -70,6 +79,15 @@ const Womenpage = () => {
               <li>Mentorship and capacity-building for future women leaders.</li>
             </ul>
           </div>
+        </div>
+
+        {/* Image 2 */}
+        <div className="flex justify-center mt-8">
+          <img
+            src="/Images/Women2.png"
+            alt="Women Empowerment Campaign"
+            className="w-full max-w-xl rounded-lg shadow-md"
+          />
         </div>
       </motion.div>
     </div>

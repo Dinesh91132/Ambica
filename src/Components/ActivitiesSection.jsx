@@ -1,58 +1,101 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import ActivityCard from './ActivityCard';
 
 const ActivitiesSection = () => {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.3,
+        ease: 'easeOut',
+      },
+    }),
+  };
+
   const activities = [
     {
       icon: "🩸",
       title: "Blood Donation Camps",
-      description: "Regular blood donation drives to support local hospitals and emergency medical needs."
+      description: "Regular blood donation drives to support local hospitals and emergency medical needs.",
+      link: "/BloodDonation"
     },
     {
       icon: "🏏",
       title: "Cricket Kit Distribution",
       description: "Providing cricket equipment to young athletes to encourage sports participation."
+      , link: "/CricketPage"
     },
     {
       icon: "💊",
       title: "Medicine Distribution",
       description: "Free medicine distribution to senior citizens and underprivileged communities."
+      , link: "/Medicine"
     },
     {
       icon: "🌱",
       title: "Plantation Programs",
       description: "Environmental conservation through tree plantation and green awareness campaigns."
+      , link: "/Planation"
     },
     {
       icon: "💧",
       title: "Water Supply",
       description: "Free drinking water supply to communities during water scarcity and emergency situations."
+      , link: "/WaterSupply"
     },
     {
       icon: "🏥",
       title: "Hospital Visits",
       description: "Regular visits to hospitals to support patients and their families during medical emergencies."
+      , link: "/Hospital"
     }
   ];
 
   return (
     <section id="activities" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-4xl font-bold text-center mb-0 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 animate-fade-in-up py-1 text-transparent">
+        <motion.h2
+          className="text-4xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          custom={0}
+        >
           Our Activities
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center animate-fade-in-up" style={{animationDelay: '200ms'}}>
-            Discover our ongoing and upcoming community initiatives that make a real difference.
-          </p>
+        </motion.h2>
+
+        <motion.p
+          className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-10"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          custom={1}
+        >
+          Discover our ongoing and upcoming community initiatives that make a real difference.
+        </motion.p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity, index) => (
-            <ActivityCard 
+            <motion.div
               key={index}
-              icon={activity.icon}
-              title={activity.title}
-              description={activity.description}
-              delay={index * 200}
-            />
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={index + 2}
+            >
+              <ActivityCard
+                icon={activity.icon}
+                title={activity.title}
+                description={activity.description}
+                delay={index * 200}
+                link={activity.link} // ✅ This line was missing before
+              />
+            </motion.div>
           ))}
         </div>
       </div>
@@ -60,4 +103,4 @@ const ActivitiesSection = () => {
   );
 };
 
-export default ActivitiesSection
+export default ActivitiesSection;

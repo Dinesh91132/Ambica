@@ -21,7 +21,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4">Contact Info</h3>
             <p className="text-blue-100 leading-relaxed">
               Serving Hindupur Constituency<br />
-              Karnataka, India<br />
+              India<br />
               Established: 2nd October 2009
             </p>
           </div>
