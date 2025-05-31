@@ -89,13 +89,7 @@ const EmploymentPage = () => {
             />
           </div>
 
-          <div className="flex justify-center">
-            <img
-              src="/images/job-success.jpg"
-              alt="Successful Placements"
-              className="w-full max-w-xl rounded-lg shadow-md"
-            />
-          </div>
+          
 
           <p className="text-gray-800">
             Secured jobs for <span className="font-bold text-black underline">1650+ candidates</span> in the{' '}
