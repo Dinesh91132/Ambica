@@ -42,16 +42,18 @@ const StatsSection = () => {
       `}</style>
 
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text">
           Our Impact in Numbers
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           <StatCard number="15+" label="Years of Service" delay={0} />
           <StatCard number="800+" label="Lives Saved" delay={150} />
           <StatCard number="50+" label="Villages Served" delay={300} />
           <StatCard number="1000+" label="Students Supported" delay={450} />
         </div>
-      </div>
+</div>
+      
     </section>
   );
 };

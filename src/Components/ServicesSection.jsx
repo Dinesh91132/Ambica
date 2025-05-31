@@ -69,7 +69,7 @@ const services = [
       // icon: "🚑",
       icon: <img src="/images/Ambulance2.png" alt="Ambulance services" className="w-100 h-47 inline-block" />,
       title: "Ambulance Services",
-      description: "24/7 free ambulance service available from Hindapur to Bangalore, Anantapur, and Puttaparthi for emergency medical assistance.",
+      description: "24/7 free ambulance service available from Hindupur to Bangalore, Anantapur, and Puttaparthi for emergency medical assistance.",
       link: "/Ambulance"
     },
     {
@@ -92,7 +92,7 @@ const services = [
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.h2
-          className="text-4xl md:text-4xl font-bold text-center mb-0 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text py-1"
+          className="text-4xl md:text-3xl font-bold text-center mb-0 text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text py-1"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -102,7 +102,7 @@ const services = [
         </motion.h2>
 
         <motion.p
-          className="text-xl text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center"
+          className="text-l text-gray-600 max-w-3xl mx-auto py-2 mb-10 text-center"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
