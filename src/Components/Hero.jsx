@@ -86,8 +86,8 @@ const Hero = ({ scrollToSection }) => {
 >
 
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="text-3xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
-              AMBICA FOUNDATION
+            <h1 className="text-2xl sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
+              "Growing Futures,Building Hope"
             </h1>
             <div className="mt-2 px-4 py-1 bg-gray-100 text-gray-700 text-sm rounded-full shadow">
               Celebrating Change Since 2009
