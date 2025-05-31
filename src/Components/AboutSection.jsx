@@ -33,7 +33,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
-          className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+          className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -52,14 +52,14 @@ const AboutSection = () => {
         >
           <div className="flex-1 text-left">
             {[
-              "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a beacon of hope and service in the Hindapur Constituency for over 15 years.",
-              "Our mission is rooted in the principles of selfless service and community development, following the ideals of Mahatma Gandhi. We believe in creating sustainable change through education, healthcare, employment opportunities, and rural development initiatives.",
-              "Ambika Foundation has traditionally provided staffing services. It is a prominent manpower recruiting firm that offers clients all over the world recruitment, staffing, HR outsourcing, and recruiters for hire. We offer complete recruiting services, from applicant search to appointment, mostly in Ghaziabad, Uttar Pradesh.",
-              "Ambika Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
+              "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a pillar of support and service, transforming lives across the Hindupur Constituency for more than 15 years.",
+              "Guided by the values of Mahatma Gandhi, our mission is to uplift communities through selfless service and transformative action. We focus on sustainable progress by empowering people with education, quality healthcare, job opportunities, and rural development.",
+              "Ambica Foundation has traditionally provided staffing services. the foundation plays a vital role in providing employment across various sectors.  foundation focuses on empowering underprivileged populations through a variety of humanitarian and developmental initiatives.",
+              "Ambica Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
             ].map((text, idx) => (
               <motion.p
                 key={idx}
-                className="text-md md:text-xl text-gray-700 leading-relaxed mb-6"
+                className="text-md md:text-l text-gray-700 leading-relaxed mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.2, duration: 0.6 }}
@@ -81,7 +81,7 @@ const AboutSection = () => {
               src="./images/About.png"
               alt="Ambika Foundation"
               loading="lazy"
-              className="rounded-2xl shadow-lg object-cover w-full h-full"
+              className="rounded-2xl shadow-lg object-cover w-85 h-auto"
             />
           </motion.div>
         </motion.div>
@@ -103,7 +103,7 @@ const AboutSection = () => {
             },
             {
               title: 'Our Focus',
-              text: "Ambika Foundation is leading the way in workplace safety across India's most dangerous industries. With a strong focus on zero injuries, we protect the hands that build our nation. Recognized globally, we are proud to set the good standard for safety."
+              text: "Ambica Foundation is leading the way in workplace safety across India's most dangerous industries. With a strong focus on zero injuries, we protect the hands that build our nation. Recognized globally, we are proud to set the good standard for safety."
             },
             {
               title: 'Our Business Policy',
@@ -119,7 +119,7 @@ const AboutSection = () => {
               variants={cardVariants}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-semibold text-gray-800">{card.title}</h3>
+              <h3 className="text-xl font-semibold text-blue-700">{card.title}</h3>
               <p className="text-gray-700 mt-2">{card.text}</p>
             </motion.div>
           ))}
