@@ -54,8 +54,8 @@ const AboutSection = () => {
             {[
               "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a beacon of hope and service in the Hindapur Constituency for over 15 years.",
               "Our mission is rooted in the principles of selfless service and community development, following the ideals of Mahatma Gandhi. We believe in creating sustainable change through education, healthcare, employment opportunities, and rural development initiatives.",
-              "Ambika Foundation has traditionally provided staffing services. It is a prominent manpower recruiting firm that offers clients all over the world recruitment, staffing, HR outsourcing, and recruiters for hire. We offer complete recruiting services, from applicant search to appointment, mostly in Ghaziabad, Uttar Pradesh.",
-              "Ambika Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
+              "Ambica Foundation has traditionally provided staffing services. It is a prominent manpower recruiting firm that offers clients all over the world recruitment, staffing, HR outsourcing, and recruiters for hire. We offer complete recruiting services, from applicant search to appointment.",
+              "Ambica Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
             ].map((text, idx) => (
               <motion.p
                 key={idx}
@@ -79,7 +79,7 @@ const AboutSection = () => {
           >
             <img
               src="./images/About.png"
-              alt="Ambika Foundation"
+              alt="Ambica Foundation"
               loading="lazy"
               className="rounded-2xl shadow-lg object-cover w-full h-full"
             />
@@ -103,7 +103,7 @@ const AboutSection = () => {
             },
             {
               title: 'Our Focus',
-              text: "Ambika Foundation is leading the way in workplace safety across India's most dangerous industries. With a strong focus on zero injuries, we protect the hands that build our nation. Recognized globally, we are proud to set the good standard for safety."
+              text: "Ambica Foundation is leading the way in workplace safety across India's most dangerous industries. With a strong focus on zero injuries, we protect the hands that build our nation. Recognized globally, we are proud to set the good standard for safety."
             },
             {
               title: 'Our Business Policy',

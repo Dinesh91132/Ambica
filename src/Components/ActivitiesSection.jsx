@@ -18,37 +18,44 @@ const ActivitiesSection = () => {
 
   const activities = [
     {
-      icon: "🩸",
+      // icon: "🩸",
+      icon: <img src="/images/BloodDonation1.png" alt="Blood Donation" className="w-100 h-47 inline-block" />,
       title: "Blood Donation Camps",
       description: "Regular blood donation drives to support local hospitals and emergency medical needs.",
       link: "/BloodDonation"
     },
     {
-      icon: "🏏",
+      // icon: "🏏",
+      icon: <img src="/images/Cricket2.png" alt="cricket kit distribution" className="w-100 h-47 inline-block" />,
       title: "Cricket Kit Distribution",
       description: "Providing cricket equipment to young athletes to encourage sports participation."
       , link: "/CricketPage"
     },
     {
-      icon: "💊",
+     
+      // icon: "📚",
+      icon: <img src="/images/MedicalAid2.png" alt="Medicine distribution" className="w-100 h-47 inline-block" />,
       title: "Medicine Distribution",
       description: "Free medicine distribution to senior citizens and underprivileged communities."
       , link: "/Medicine"
     },
     {
-      icon: "🌱",
+      // icon: "🌱",
+      icon: <img src="/images/Plantation1.png" alt="plantation" className="w-100 h-47 inline-block" />,
       title: "Plantation Programs",
       description: "Environmental conservation through tree plantation and green awareness campaigns."
       , link: "/Planation"
     },
     {
-      icon: "💧",
+      // icon: "💧",
+      icon: <img src="/images/WaterSupply2.png" alt="Water Supply" className="w-100 h-47 inline-block" />,
       title: "Water Supply",
       description: "Free drinking water supply to communities during water scarcity and emergency situations."
       , link: "/WaterSupply"
     },
     {
-      icon: "🏥",
+      // icon: "🏥",
+      icon: <img src="/images/Hospital2.png" alt="Hospital Visits" className="w-100 h-47 inline-block" />,
       title: "Hospital Visits",
       description: "Regular visits to hospitals to support patients and their families during medical emergencies."
       , link: "/Hospital"
