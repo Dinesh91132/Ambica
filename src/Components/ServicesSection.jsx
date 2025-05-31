@@ -81,7 +81,7 @@ const services = [
     },
     {
       // icon: "🎁",
-      icon: <img src="/images/OtherServices3.png" alt="Other SErvices" className="w-100 h-47 inline-block" />,
+      icon: <img src="/images/OtherServices1.png" alt="Other SErvices" className="w-100 h-47 inline-block" />,
       title: "Other Services",
       description: "Distribution of blankets, cultural activities, women empowerment programs, borewell installations, COVID relief efforts, and more.",
       link: "/OtherServices"
