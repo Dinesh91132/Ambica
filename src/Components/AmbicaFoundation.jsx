@@ -102,13 +102,7 @@ const AmbicaFoundation = () => {
         }
       `}</style>
 
-      {/* <Header
-        isScrolled={isScrolled}
-        activeSection={activeSection}
-        isMobileMenuOpen={isMobileMenuOpen}
-        scrollToSection={scrollToSection}
-        toggleMobileMenu={toggleMobileMenu}
-      /> */}
+  
 
       <Hero scrollToSection={scrollToSection} />
       <StatsSection />
