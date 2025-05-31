@@ -16,7 +16,7 @@ const fadeInUp = {
 
 const ContactPage = () => {
   return (
-    <div className="contact-page">
+    <section id="contact" className="contact-page">
       {/* Header */}
       <motion.div
         className="page-header"
@@ -75,7 +75,7 @@ const ContactPage = () => {
                   <div className="w-6 h-6 text-blue-600 mt-1">{info.icon}</div>
                   <div>
                     <h3 className="font-semibold text-gray-800">{info.title}</h3>
-                    <p className="text-gray-600">{info.lines.join('<br/>')}</p>
+                    <p className="text-gray-600">{info.lines.join(' ')}</p>
                   </div>
                 </motion.div>
               ))}
@@ -114,7 +114,7 @@ const ContactPage = () => {
                 animate="visible"
                 custom={5}
               >
-                <label className="block text-grey-700 font-medium mb-2">Message</label>
+                <label className="block text-gray-700 font-medium mb-2">Message</label>
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 resize-none"
@@ -134,7 +134,7 @@ const ContactPage = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

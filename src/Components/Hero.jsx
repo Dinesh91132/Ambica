@@ -1,9 +1,12 @@
+
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = ({ scrollToSection }) => {
   const [offset, setOffset] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setOffset(window.scrollY);
@@ -46,7 +49,7 @@ const Hero = ({ scrollToSection }) => {
   return (
     <section id="home" className="relative min-h-screen overflow-hidden pt-8">
       {/* Background floating gradient bubbles */}
-      <div className="absolute inset-0 z-0 bg-white" />
+      <div className="absolute inset-0 z-0 " />
       <div className="absolute inset-0 bg-gradient-to-br  z-0" />
 
       {[...Array(5)].map((_, i) => (
@@ -64,14 +67,24 @@ const Hero = ({ scrollToSection }) => {
         />
       ))}
 
-      <div className="container mx-auto px-6 sm:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* <div className="container mx-auto px-6 sm:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"> */}
+        <div className="container mx-auto px-6 sm:px-8 relative z-10 flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center">
+
         {/* Text Section */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="show"
           className="order-2 lg:order-1 text-center lg:text-left space-y-6"
-        >
+          
+        > */}
+        <motion.div
+  variants={fadeIn}
+  initial="hidden"
+  animate="show"
+  className="order-1 lg:order-2 space-y-6"
+>
+
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="text-3xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
               AMBICA FOUNDATION
@@ -90,22 +103,24 @@ const Hero = ({ scrollToSection }) => {
           </p>
 
           <p className="text-gray-800 text-m max-w-xl mx-auto lg:mx-0">
-            In 2024, under the leadership of Ambica Moharana, the foundation launched an initiative to plant 5,000+ trees for a greener future.
+            In 2024, under the leadership of Ambica
+            foundation launched an initiative to plant 5,000+ trees for a greener future.
           </p>
 
           <div className="flex gap-4 flex-wrap pt-4 justify-center lg:justify-start">
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => navigate('/services')}
               className="px-4 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:scale-105 shadow-xl transition-all"
             >
               Explore Our Services
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigate('/contact')}
               className="px-4 py-3 rounded-full bg-white text-gray-800 border border-gray-300 hover:bg-gray-100 shadow transition-all"
             >
               Get In Touch
             </button>
+ 
           </div>
         </motion.div>
 

@@ -4,7 +4,7 @@ import StatCard from './StatCard'; // Make sure this path is correct
 
 const StatsSection = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-0 px-1 sm:px-2 lg:px-2 ">
       <style jsx>{`
         @keyframes fadeInUp {
           0% {

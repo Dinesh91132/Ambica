@@ -23,15 +23,15 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 animate-fade-in-up cursor-pointer">
             <div >
-              <span className="text-white font-bold text-xl">
+              <span className="text-white font-bold text-xl ">
                 <img src="/images/logo.png" alt="Logo" 
 
-            className="w-13 h-12 rounded shadow-lg transform hover:scale-110 transition-transform duration-300"
+            className="w-13 h-12 rounded  transform hover:scale-110 transition-transform duration-300"
            />
               </span>
             </div>
             <div>
-              <h1 className="text-1xl md:text-1xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 animate-fade-in-up py-1">AMBICA FOUNDATION</h1>
+              <h1 className="text-1xl md:text-1xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 animate-fade-in-up py-0">AMBICA FOUNDATION</h1>
               <p className="text-sm text-gray-700">Serving Since 2009</p>
             </div>
           </Link>
