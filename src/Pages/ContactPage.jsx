@@ -26,10 +26,10 @@ const ContactPage = () => {
         custom={0}
       >
         <div className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-4xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 py-1 text-transparent">
+          <h1 className="text-4xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-0 py-1 text-transparent">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-l text-gray-600 max-w-3xl mx-auto">
             Get in touch with us to learn more about our work or to get involved.
           </p>
         </div>
@@ -45,7 +45,7 @@ const ContactPage = () => {
             animate="visible"
             custom={1}
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-8">Get In Touch</h2>
+            <h2 className="text-2xl font-bold text-blue-700 mb-8">Get In Touch</h2>
             <div className="space-y-6">
               {[
                 {
@@ -90,7 +90,7 @@ const ContactPage = () => {
             animate="visible"
             custom={2}
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-blue-700 mb-6">Send us a Message</h2>
             <div className="space-y-6">
               {['Name', 'Email'].map((label, i) => (
                 <motion.div
@@ -114,7 +114,7 @@ const ContactPage = () => {
                 animate="visible"
                 custom={5}
               >
-                <label className="block text-gray-700 font-medium mb-2">Message</label>
+                <label className="block text-grey-700 font-medium mb-2">Message</label>
                 <textarea
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 resize-none"

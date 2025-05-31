@@ -59,7 +59,7 @@ const ActivitiesSection = () => {
     <section id="activities" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50/30 to-purple-50/30">
       <div className="max-w-7xl mx-auto">
         <motion.h2
-          className="text-4xl md:text-4xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
+          className="text-4xl md:text-3xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -69,7 +69,7 @@ const ActivitiesSection = () => {
         </motion.h2>
 
         <motion.p
-          className="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-10"
+          className="text-l text-gray-600 max-w-3xl mx-auto text-center mb-10"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"

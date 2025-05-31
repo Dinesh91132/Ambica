@@ -12,17 +12,17 @@ const Hero = ({ scrollToSection }) => {
       <div className="absolute center-40 right-20 w-12 h-12 bg-green-200/60 rounded-full animate-float" style={{animationDelay: '0s'}}></div>
       <div className="absolute center-20 left-10 w-14 h-14 bg-red-200/60 rounded-full animate-float" style={{animationDelay: '0s'}}></div>
       
-      <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
-        <h1 className="text-4xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-3 animate-fade-in-up py-0">
+      <div className="max-w-2xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10">
+        <h1 className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-3 animate-fade-in-up py-0">
           AMBICA FOUNDATION
         </h1>
         <h2 className="text-3xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text mb-6 animate-fade-in-up py-5">
           Serving Communities
         </h2>
-        <p className="text-3xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 animate-fade-in-up" style={{animationDelay: '200ms'}}>
+        <p className="text-3xl md:text-2xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text mb-8 animate-fade-in-up" style={{animationDelay: '200ms'}}>
           Since 2009
         </p>
-        <p className="text-xl md:text-1xl text-gray-800 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '400ms'}}>
+        <p className="text-xl md:text-xl text-gray-800 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '400ms'}}>
           Established on Gandhi Jayanthi, we provide comprehensive support through healthcare, education, employment, and community development initiatives.
           <br />
           
