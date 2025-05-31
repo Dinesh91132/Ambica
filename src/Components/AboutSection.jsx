@@ -52,9 +52,15 @@ const AboutSection = () => {
         >
           <div className="flex-1 text-left">
             {[
+
+              "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a beacon of hope and service in the Hindapur Constituency for over 15 years.",
+              "Our mission is rooted in the principles of selfless service and community development, following the ideals of Mahatma Gandhi. We believe in creating sustainable change through education, healthcare, employment opportunities, and rural development initiatives.",
+              "Ambica Foundation has traditionally provided staffing services. It is a prominent manpower recruiting firm that offers clients all over the world recruitment, staffing, HR outsourcing, and recruiters for hire. We offer complete recruiting services, from applicant search to appointment.",
+
               "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a pillar of support and service, transforming lives across the Hindupur Constituency for more than 15 years.",
               "Guided by the values of Mahatma Gandhi, our mission is to uplift communities through selfless service and transformative action. We focus on sustainable progress by empowering people with education, quality healthcare, job opportunities, and rural development.",
               "Ambica Foundation has traditionally provided staffing services. the foundation plays a vital role in providing employment across various sectors.  foundation focuses on empowering underprivileged populations through a variety of humanitarian and developmental initiatives.",
+
               "Ambica Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
             ].map((text, idx) => (
               <motion.p
@@ -79,7 +85,7 @@ const AboutSection = () => {
           >
             <img
               src="./images/About.png"
-              alt="Ambika Foundation"
+              alt="Ambica Foundation"
               loading="lazy"
               className="rounded-2xl shadow-lg object-cover w-85 h-auto"
             />

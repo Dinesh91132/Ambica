@@ -16,57 +16,72 @@ const ServicesSection = () => {
     }),
   };
 
-  const services = [
+  // const services = [
+  //   {
+  //     icon: "🏥",
+  //     title: "Medical Camp",
+  //     description: "Free ambulance service from Hindapur to Bangalore, Anantapur and Puttaparthi. and health check-ups for students.",
+  //     link: "/MedicalAid",
+  //   },
+const services = [
+  {
+    icon: <img src="/images/medicalicon.png" alt="Medical Icon" className="w-100 h-47 inline-block" />,
+    title: "Medical Camp",
+    description: "Free ambulance service from Hindapur to Bangalore, Anantapur and Puttaparthi. and health check-ups for students.",
+    link: "/MedicalAid",
+  },
+  {
+    // icon: "🎓",
+    icon: <img src="/images/Dictionaries.png" alt="eduaction" className="w-100 h-47 inline-block" />,
+    title: "Education",
+    description: "Scholarships for meritorious students pursuing Engineering and M.B.A. Donations of books, stationery and uniforms to support education.",
+    link: "/Education",
+  },
     {
-      icon: "🏥",
-      title: "Medical Camp",
-      description: "Free ambulance service from Hindapur to Bangalore, Anantapur and Puttaparthi. and health check-ups for students.",
-      link: "/MedicalAid",
-    },
-    {
-      icon: "🎓",
-      title: "Education",
-      description: "Scholarships for meritorious students pursuing Engineering and M.B.A. Donations of books, stationery and uniforms to support education.",
-      link: "/Education",
-    },
-    {
-      icon: "💼",
+      // icon: "💼",
+      icon: <img src="/images/Jobs1.png" alt="employment" className="w-100 h-47 inline-block" />,
       title: "Employment",
       description: "Conducting job fairs (Job Mela) for unemployed individuals to connect them with potential employers and create opportunities.",
       link: "/Employment",
     },
     {
-      icon: "🌾",
+      // icon: "🌾",
+      icon: <img src="/images/Rural2.png" alt="Rural Development" className="w-100 h-47 inline-block" />,
       title: "Rural Development",
       description: "Donated street lights to villages for better safety and connectivity. Supporting rural infrastructure development initiatives.",
       link: "/Rural"
     },
     {
-      icon: "🧵",
+      // icon: "🧵",
+      icon: <img src="/images/Women1.png" alt="women empowerment" className="w-100 h-47 inline-block" />,
       title: "Women Empowerment",
       description: "Donated sewing machines to poor women to help them establish their own livelihood and achieve financial independence.",
       link: "/Womenpage"
     },
     {
-      icon: "⛑️",
+      // icon: "⛑️",
+      icon: <img src="/images/Disaster1.png" alt="Disaster relief" className="w-100 h-47 inline-block" />,
       title: "Disaster Relief",
       description: "Rapid response to local disasters with food, clothing, and temporary shelter support for affected families.",
       link: "/DisasterPage"
     },
     {
-      icon: "🚑",
+      // icon: "🚑",
+      icon: <img src="/images/Ambulance2.png" alt="Ambulance services" className="w-100 h-47 inline-block" />,
       title: "Ambulance Services",
       description: "24/7 free ambulance service available from Hindupur to Bangalore, Anantapur, and Puttaparthi for emergency medical assistance.",
       link: "/Ambulance"
     },
     {
-      icon: "🏆",
+      // icon: "🏆",
+      icon: <img src="/images/SportsPage1.png" alt="sports" className="w-100 h-47 inline-block" />,
       title: "Sports",
       description: "Organized district-wide volleyball tournaments and mandal-wide cricket tournaments in rural areas to promote sports.",
       link: "/SportsPage"
     },
     {
-      icon: "🎁",
+      // icon: "🎁",
+      icon: <img src="/images/OtherServices3.png" alt="Other SErvices" className="w-100 h-47 inline-block" />,
       title: "Other Services",
       description: "Distribution of blankets, cultural activities, women empowerment programs, borewell installations, COVID relief efforts, and more.",
       link: "/OtherServices"
