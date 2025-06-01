@@ -52,12 +52,9 @@ const AboutSection = () => {
         >
           <div className="flex-1 text-left">
             {[
-
-           
               "Founded on Gandhi Jayanthi (October 2nd, 2009), Ambica Foundation has been a pillar of support and service, transforming lives across the Hindupur Constituency for more than 15 years.",
               "Guided by the values of Mahatma Gandhi, our mission is to uplift communities through selfless service and transformative action. We focus on sustainable progress by empowering people with education, quality healthcare, job opportunities, and rural development.",
               "Ambica Foundation has traditionally provided staffing services. the foundation plays a vital role in providing employment across various sectors.  foundation focuses on empowering underprivileged populations through a variety of humanitarian and developmental initiatives.",
-
               "Ambica Foundation has assisted many organisations in areas such as construction, facility management, oil and gas, hospitality, security, manufacturing, hypermarkets, medical, and industries with countless customers and multiple trade testing and training facilities. We can effectively cater to recruiting and personnel demands from onshore to offshore sites thanks to automated operations managed by a competent team."
             ].map((text, idx) => (
               <motion.p
@@ -115,7 +112,7 @@ const AboutSection = () => {
           ].map((card, idx) => (
             <motion.div
               key={idx}
-              className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg"
+              className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border-t-4 border-blue-600"
               custom={idx}
               initial="hidden"
               whileInView="visible"

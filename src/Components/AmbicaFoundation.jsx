@@ -17,7 +17,7 @@ const AmbicaFoundation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ['home', 'services', 'activities', 'about', 'contact'];
+      const sections = ['home', 'about','services', 'activities', 'contact'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -105,10 +105,11 @@ const AmbicaFoundation = () => {
   
 
       <Hero scrollToSection={scrollToSection} />
+       <AboutSection />
       <StatsSection />
       <ServicesSection />
       <ActivitiesSection />
-      <AboutSection />
+     
       {/* <Footer /> */}
     </div>
   );

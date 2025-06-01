@@ -8,9 +8,10 @@ const Header = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
     { path: '/services', label: 'Services' },
     { path: '/activities', label: 'Activities' },
-    { path: '/about', label: 'About' },
+    
     { path: '/contact', label: 'Contact' }
   ];
 
